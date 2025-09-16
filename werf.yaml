@@ -1,0 +1,11 @@
+project: helmchartdemo
+configVersion: 1
+deploy:
+  namespace: default
+cleanup:
+  disableGitHistoryBasedPolicy: true
+
+---
+image: helmchartdemo_migrations
+dockerfile: Dockerfile
+
